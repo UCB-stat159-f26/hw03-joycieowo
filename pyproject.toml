@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tennis-age-diff-plot"
+version = "0.1.0"
+description = "Tennis player career match age visualization"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "requests",
+	"numpy"
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["tennis_age_diff_plot*"]
+
+[project.urls]
+Repository = "https://github.com/UCB-stat159-f26/hw03-joycieowo"
+Documentation = "https://github.com/UCB-stat159-f26/hw03-joycieowo#readme"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
