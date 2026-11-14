@@ -1,0 +1,77 @@
+AI Documentation — STAT 159 Homework 3
+======================================
+
+AI Tool
+-------
+Name: ChatGPT
+Provider: OpenAI
+Model: GPT-6
+Date of use: November 2026
+
+
+Prompts and Outputs
+-------------------
+
+**1. Data Cleaning and Processing**
+
+Prompt:
+The HW3 assignment required two public functions: one to retrieve and clean career match data for a given player and another to generate a scatter plot. It also required supporting male and female players whose JavaScript files store opponent age information differently.
+
+Output:
+ChatGPT suggested reusable cleaning functions for extracting match records from JavaScript files, calculating player ages, processing opponent ages, and creating pandas DataFrames.
+
+It explained the differences between male and female player data formats and suggested private helper functions to meet the assignment's function-length restrictions.
+
+
+**2. Visualization Colors**
+
+Prompt:
+match the color on the original plot as close as possible
+
+Output:
+ChatGPT suggested using light blue (#43bfe3) for won matches and purple (#923b8f) for lost matches.
+
+It also recommended adjusting the point size and transparency to make the visualization closer to the original reference.
+
+**3. Visualization Formatting**
+
+Prompt:
+"also can you make the captions as close to the original plot as possible?"
+
+Follow-up:
+"i think the y axis should be a interval of 10 and from the middle (same age) to the max 20 for each end"
+
+Output:
+ChatGPT suggested modifications to the plotting function to improve the title, legend, axis labels, and layout.
+
+It also provided code to set the y-axis tick marks to -20, -10, 0, 10, and 20, with zero labeled "Same age."
+
+The suggestions aimed to reproduce the original visualization's formatting while omitting event annotations.
+
+**4. Automated Testing**
+
+Prompt:
+The HW3 assignment specified that automated tests should avoid contacting live servers and should instead test data cleaning using sample JavaScript files for male and female players.
+
+Output:
+ChatGPT suggested using pytest with local JavaScript fixtures.
+
+It also demonstrated how to use mocking to test the public data retrieval function without contacting external websites.
+
+**5. README Documentation**
+
+Prompt:
+"what are some essential sections to include in the README.md?"
+
+Output:
+ChatGPT suggested some important README.md content including the project overview, repository structure, data sources, installation instructions, public functions, visualization design, testing, and reproducibility.
+
+**6. Package Configuration**
+
+Prompt:
+"is there anything to add on for the pyproject.toml?"
+
+Output:
+ChatGPT reviewed the suggested package configuration and recommended including NumPy as an explicit dependency.
+
+It also suggested adding README metadata, author information, GitHub repository links, and pytest configuration to improve package documentation and installation.
